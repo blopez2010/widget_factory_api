@@ -8,9 +8,10 @@ This widget factory server is a Graphql built in service and in order to be inst
 
 ## Development
 
-1. Run `yarn start`  to start the api.
-2. Open the browser in http://localhost:4000/
-3. Add the following json in the `HTTP HEADERS` tab in the `Playground`
+1. Run `yarn` to install packages.
+2. Run `yarn start`  to start the api.
+3. Open the browser in http://localhost:4000/
+4. Add the following json in the `HTTP HEADERS` tab in the `Playground`
 
 ```json
 {
