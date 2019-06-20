@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "concurrently \"yarn dev:json\" \"yarn dev:api\"",
+    "dev:api": "node .",
+    "dev:json": "json-server --watch ./db/data.json"
+  },
+  "dependencies": {
+    "apollo-server": "^2.6.3",
+    "axios": "^0.19.0",
+    "dotenv": "^8.0.0",
+    "graphql": "^14.3.1",
+    "graphql-import": "^0.7.1",
+    "shortid": "^2.2.14",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@playlyfe/gql": "^2.6.1",
+    "concurrently": "^4.1.0"
+  }
+}

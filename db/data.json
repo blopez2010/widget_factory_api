@@ -1,0 +1,123 @@
+{
+  "widgets": [
+    {
+      "id": "dedf6d2c-6e8a-4d25-8631-8fcf33c26e09",
+      "name": "Widget for prime people",
+      "category": {
+        "id": "8c5b1b7b-e619-407b-9721-732032737246"
+      },
+      "size": "SMALL",
+      "color": "Blue",
+      "quantity": 2,
+      "amount": 9.99
+    },
+    {
+      "id": "8c16d790-9088-11e9-8a0c-db78c87f9ff6",
+      "name": "Testing add widget",
+      "category": {
+        "id": "9bba6c95-a7e2-4fcf-8601-dbd0692f2d6f"
+      },
+      "size": "MEDIUM",
+      "color": "Purple",
+      "quantity": 2,
+      "amount": 14.99
+    },
+    {
+      "id": "137daa00-908a-11e9-8423-d968d08bdc7d",
+      "name": "Testing update widget",
+      "category": {
+        "id": "9bba6c95-a7e2-4fcf-8601-dbd0692f2d6f"
+      },
+      "size": "MEDIUM",
+      "color": "Purple",
+      "quantity": 5,
+      "amount": 10.99
+    },
+    {
+      "id": "2de96610-908d-11e9-b896-65438cbef800",
+      "name": "Testing add widget",
+      "category": {
+        "id": "9bba6c95-a7e2-4fcf-8601-dbd0692f2d6f"
+      },
+      "size": "MEDIUM",
+      "color": "Purple",
+      "quantity": 2,
+      "amount": 14.99
+    },
+    {
+      "id": "3e280770-908d-11e9-b896-65438cbef800",
+      "name": "Testing add widget",
+      "category": {
+        "id": "9bba6c95-a7e2-4fcf-8601-dbd0692f2d6f"
+      },
+      "size": "MEDIUM",
+      "color": "Purple",
+      "quantity": 2,
+      "amount": 14.99
+    },
+    {
+      "id": "485ca390-908d-11e9-b896-65438cbef800",
+      "name": "Testing add widget",
+      "category": {
+        "id": "9bba6c95-a7e2-4fcf-8601-dbd0692f2d6f"
+      },
+      "size": "MEDIUM",
+      "color": "Purple",
+      "quantity": 2,
+      "amount": 14.99
+    },
+    {
+      "id": "4f240560-908d-11e9-b896-65438cbef800",
+      "name": "Testing add widget",
+      "category": {
+        "id": "9bba6c95-a7e2-4fcf-8601-dbd0692f2d6f"
+      },
+      "size": "MEDIUM",
+      "color": "Purple",
+      "quantity": 2,
+      "amount": 14.99
+    }
+  ],
+  "categories": [
+    {
+      "id": "8c5b1b7b-e619-407b-9721-732032737246",
+      "name": "Widget Prime "
+    },
+    {
+      "id": "9bba6c95-a7e2-4fcf-8601-dbd0692f2d6f",
+      "name": "Widget Elite "
+    },
+    {
+      "id": "89dd225d-63a2-4f9d-967a-0d2db58bdf39",
+      "name": "Widget Extreme Edition"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1dedb4d9-9c3f-4abd-956b-fc0740d4470c",
+      "widgets": [
+        {
+          "id": "dedf6d2c-6e8a-4d25-8631-8fcf33c26e09",
+          "quantity": 2
+        },
+        {
+          "id": "8c16d790-9088-11e9-8a0c-db78c87f9ff6",
+          "quantity": 2
+        }
+      ],
+      "orderNumber": "GUJiy9Fvj",
+      "orderedDate": "2019-06-15T06:02:39.269Z"
+    },
+    {
+      "id": "c358d020-90c7-11e9-9d97-3788f56190eb",
+      "widgets": [
+        {
+          "id": "dedf6d2c-6e8a-4d25-8631-8fcf33c26e09",
+          "quantity": 1
+        }
+      ],
+      "orderedDate": "2019-06-17T06:18:46.178Z",
+      "orderNumber": "D8RJR-dvD"
+    }
+  ]
+}

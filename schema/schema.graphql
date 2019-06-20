@@ -1,0 +1,111 @@
+scalar Date
+
+interface Entity {
+  id: ID!
+}
+
+type Widget implements Entity {
+  id: ID!
+  name: String!
+  category: Category!
+  size: Sizes!
+  color: String!
+  quantity: Int!
+  amount: Float!
+}
+
+type Category implements Entity {
+  id: ID!
+  name: String!
+}
+
+input SearchWidgetInput {
+  size: Sizes
+  name: String
+  category: IdInput
+}
+
+type Order implements Entity {
+  id: ID!
+  # Widget information for the order
+  widgets: [Widget!]!
+  orderNumber: String!
+  orderedDate: Date!
+}
+
+input IdInput {
+  id: String!
+}
+
+input AddWidgetInput {
+  name: String!
+  category: IdInput!
+  size: Sizes = FINE
+  color: String!
+  quantity: Int!
+  amount: Float!
+}
+
+input UpdateWidgetInput {
+  name: String
+  category: IdInput
+  size: Sizes
+  color: String
+  quantity: Int
+  amount: Float
+}
+
+input AddCategoryInput {
+  id: ID!
+  name: String!
+}
+
+input UpdateCategoryInput {
+  name: String!
+}
+
+input WidgetOrderInput {
+  id: String!
+  quantity: Int!
+}
+
+input OrderInput {
+  # Widget information for the order
+  widgets: [WidgetOrderInput!]!
+}
+
+type OrderPayload {
+  orderNumber: String!
+  widgets: [Widget!]!
+  totalAmount: Float!
+}
+
+type Query {
+  searchWidgets(search: SearchWidgetInput!): [Widget!]!
+  allWidgets: [Widget!]!
+  allCategories: [Category!]!
+  allOrders: [Order!]!
+  getOrder(orderNumber: String!): Order!
+}
+
+type Mutation {
+  addWidget(input: AddWidgetInput!): Widget
+  updateWidget(id: String!, input: UpdateWidgetInput!): Widget
+  removeWidget(id: String!): Widget
+  addCategory(input: AddCategoryInput!): Category
+  updateCategory(id: String!, input: UpdateCategoryInput!): Category
+  removeCategory(id: String!): Category
+  placeOrder(input: OrderInput!): OrderPayload!
+}
+
+enum Sizes {
+  FINE
+  DIMINUTIVE
+  TINY
+  SMALL
+  MEDIUM
+  LARGE
+  HUGE
+  GARGANTUAN
+  COLOSSAL
+}
